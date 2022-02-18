@@ -1,0 +1,114 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "removeComments": true,
+    "sourceMap": false,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/pages/*": [
+        "pages/*"
+      ],
+      "@/public/*": [
+        "public/*"
+      ],
+      "@/_metronic/*": [
+        "./src/_metronic/*"
+      ],
+      "@/api/*": [
+        "./src/api/*"
+      ],
+      "@/assets/*": [
+        "./src/assets/*"
+      ],
+      "@/components/*": [
+        "./src/components/*"
+      ],
+      "@/constants/*": [
+        "./src/constants/*"
+      ],
+      "@/hocs/*": [
+        "./src/hocs/*"
+      ],
+      "@/hooks/*": [
+        "./src/hooks/*"
+      ],
+      "@/layouts/*": [
+        "./src/layouts/*"
+      ],
+      "@/libs/*": [
+        "./src/libs/*"
+      ],
+      "@/models/*": [
+        "./src/models/*"
+      ],
+      "@/routes/*": [
+        "./src/routes/*"
+      ],
+      "@/server/*": [
+        "./src/server/*"
+      ],
+      "@/store/*": [
+        "./src/store/*"
+      ],
+      "@/styles/*": [
+        "./src/styles/*"
+      ],
+      "@/theme/*": [
+        "./src/theme/*"
+      ],
+      "@/translations/*": [
+        "./src/translations/*"
+      ],
+      "@/types/*": [
+        "./src/types/*"
+      ],
+      "@/utils/*": [
+        "./src/utils/*"
+      ],
+      "@/views/*": [
+        "./src/views/*"
+      ]
+    },
+    "incremental": true
+  },
+  "exclude": [
+    "node_modules",
+    ".next",
+    "dist",
+    "next.config.js"
+  ],
+  "include": [
+    "declaration.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/components/SaveAnimation/index.jsx",
+    "src/_metronic/ts/components/_DialerComponent.te"
+  ],
+  "typeRoots": [
+    "../node_modules/@types",
+    "../@types"
+  ]
+}

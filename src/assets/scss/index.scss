@@ -1,0 +1,89 @@
+@import "../../_metronic/assets/sass/style.scss";
+.text__ellipsis_1 {
+    float: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: break-spaces;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.text__ellipsis_2 {
+    float: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: break-spaces;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+// // Brand themes
+// .brand-dark {
+//     @import '../../_metronic/_assets/sass/themes/layout/brand/dark.scss';
+// }
+// // Light
+// .brand-light {
+//     @import '../../_metronic/_assets/sass/themes/layout/brand/light.scss';
+// }
+
+.hoverable {
+    cursor: pointer;
+}
+.bg-halo-600 {
+    background: #de651c !important;
+}
+.bg-halo-100 {
+    background: #fff3ec !important;
+}
+.bg-halo-400 {
+    background: #f78743 !important;
+}
+.color-grey-900 {
+    background: #34404b !important;
+}
+.bg-gray {
+    background: #f8f8f8;
+}
+.rounded-24 {
+    border-radius: 24px !important;
+}
+.rounded-360 {
+    border-radius: 360px !important;
+}
+.rounded-8 {
+    border-radius: 8px !important;
+}
+.rounded-16 {
+    border-radius: 16px !important;
+}
+.text__uppercase {
+    text-transform: uppercase !important;
+}
+.text__lowercase {
+    text-transform: lowercase !important;
+}
+.text__capitalize {
+    text-transform: capitalize !important;
+}
+.cover-image {
+    object-fit: cover;
+}
+.fs-12px {
+    font-size: 12px;
+}
+.text-hover-fw-bold:hover {
+    font-weight: bold;
+}
+//shadow
+.hover-shadow-small {
+    transition: all 0.2s ease-in-out;
+}
+.hover-shadow-small:hover {
+    box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.15);
+}
+.filter-grayscale {
+    filter: grayscale(100%);
+}

@@ -1,0 +1,137 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?5f72e985604d9e0046088e304b664f9c") format("truetype"),
+url("./flaticon.woff?5f72e985604d9e0046088e304b664f9c") format("woff"),
+url("./flaticon.woff2?5f72e985604d9e0046088e304b664f9c") format("woff2"),
+url("./flaticon.eot?5f72e985604d9e0046088e304b664f9c#iefix") format("embedded-opentype"),
+url("./flaticon.svg?5f72e985604d9e0046088e304b664f9c#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "help-web-button": "\f101",
+    "display-frame": "\f102",
+    "logout": "\f103",
+    "moon": "\f104",
+    "translate": "\f105",
+    "heart": "\f106",
+    "speech-bubble": "\f107",
+    "share": "\f108",
+    "multiple-users-silhouette": "\f109",
+    "newsfeed": "\f10a",
+    "trip-luggage": "\f10b",
+    "star-1": "\f10c",
+    "paper-plane": "\f10d",
+    "paper-plane-1": "\f10e",
+    "certificate": "\f10f",
+    "increase": "\f110",
+    "travel": "\f111",
+    "leadership": "\f112",
+    "work-station": "\f113",
+    "cutlery": "\f114",
+    "fork": "\f115",
+    "knife": "\f116",
+    "boat": "\f117",
+    "football-field": "\f118",
+    "music-note": "\f119",
+    "musical-note": "\f11a",
+    "movie": "\f11b",
+    "cocktail": "\f11c",
+);
+
+.flaticon-help-web-button:before {
+    content: map-get($flaticon-map, "help-web-button");
+}
+.flaticon-display-frame:before {
+    content: map-get($flaticon-map, "display-frame");
+}
+.flaticon-logout:before {
+    content: map-get($flaticon-map, "logout");
+}
+.flaticon-moon:before {
+    content: map-get($flaticon-map, "moon");
+}
+.flaticon-translate:before {
+    content: map-get($flaticon-map, "translate");
+}
+.flaticon-heart:before {
+    content: map-get($flaticon-map, "heart");
+}
+.flaticon-speech-bubble:before {
+    content: map-get($flaticon-map, "speech-bubble");
+}
+.flaticon-share:before {
+    content: map-get($flaticon-map, "share");
+}
+.flaticon-multiple-users-silhouette:before {
+    content: map-get($flaticon-map, "multiple-users-silhouette");
+}
+.flaticon-newsfeed:before {
+    content: map-get($flaticon-map, "newsfeed");
+}
+.flaticon-trip-luggage:before {
+    content: map-get($flaticon-map, "trip-luggage");
+}
+.flaticon-star-1:before {
+    content: map-get($flaticon-map, "star-1");
+}
+.flaticon-paper-plane:before {
+    content: map-get($flaticon-map, "paper-plane");
+}
+.flaticon-paper-plane-1:before {
+    content: map-get($flaticon-map, "paper-plane-1");
+}
+.flaticon-certificate:before {
+    content: map-get($flaticon-map, "certificate");
+}
+.flaticon-increase:before {
+    content: map-get($flaticon-map, "increase");
+}
+.flaticon-travel:before {
+    content: map-get($flaticon-map, "travel");
+}
+.flaticon-leadership:before {
+    content: map-get($flaticon-map, "leadership");
+}
+.flaticon-work-station:before {
+    content: map-get($flaticon-map, "work-station");
+}
+.flaticon-cutlery:before {
+    content: map-get($flaticon-map, "cutlery");
+}
+.flaticon-fork:before {
+    content: map-get($flaticon-map, "fork");
+}
+.flaticon-knife:before {
+    content: map-get($flaticon-map, "knife");
+}
+.flaticon-boat:before {
+    content: map-get($flaticon-map, "boat");
+}
+.flaticon-football-field:before {
+    content: map-get($flaticon-map, "football-field");
+}
+.flaticon-music-note:before {
+    content: map-get($flaticon-map, "music-note");
+}
+.flaticon-musical-note:before {
+    content: map-get($flaticon-map, "musical-note");
+}
+.flaticon-movie:before {
+    content: map-get($flaticon-map, "movie");
+}
+.flaticon-cocktail:before {
+    content: map-get($flaticon-map, "cocktail");
+}

@@ -1,0 +1,7 @@
+{
+    "required": "{{field}} is required",
+    "phone": "Phone number is invalid",
+    "email": "Email address is invalid",
+    "minLength": "{{field}} should more than {{length}} characters",
+    "maxLength": "{{field}} can not be more than {{length}} characters"
+}

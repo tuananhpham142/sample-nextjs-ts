@@ -1,0 +1,7 @@
+{
+    "required": "{{field}} không được bỏ trống",
+    "phone": "Số điện thoại không hợp lệ",
+    "email": "Địa chỉ email không hợp lệ",
+    "minLength": "{{field}} phải có nhiều hơn {{length}} ký tự",
+    "maxLength": "{{field}} không được vượt quá {{length}} ký tự"
+}

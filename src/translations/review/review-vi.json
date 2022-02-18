@@ -1,0 +1,20 @@
+{
+    "label": {
+        "rating": {
+            "ratingWorst": "Rất tệ",
+            "ratingWorse": "Trung bình",
+            "ratingNormal": "Tạm ổn",
+            "ratingGood": "Tốt",
+            "ratingBest": "Tuyệt vời"
+        },
+        "common": {
+            "totalReviews": "{{totalReview}} đánh giá",
+            "label": "Đánh giá",
+            "travelType": "Loại hình du lịch",
+            "signatureReview": "Đánh giá tiêu biểu"
+        }
+    },
+    "button": {
+        "createReview": "Tạo đánh giá"
+    }
+}

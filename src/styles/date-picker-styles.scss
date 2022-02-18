@@ -1,0 +1,73 @@
+.SingleDatePicker {
+    width: 100%;
+    height: 48px;
+    height: 100%;
+
+    .SingleDatePickerInput {
+        width: 100%;
+        height: 100%;
+    }
+
+    .DateInput {
+        border: none;
+        width: 100%;
+        height: 48px;
+        border-radius: 8px;
+    }
+
+    .DateInput_input__focused {
+        border-bottom: none;
+        background: #f3f6f9;
+        height: 100%;
+        transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .DateInput_input {
+        height: 100%;
+        border-radius: 8px;
+        border-bottom: none;
+        background: #f0f2f5;
+        transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .DateInput_input__disabled {
+        color: #cecece;
+        cursor: not-allowed;
+    }
+
+    .SingleDatePickerInput__withBorder {
+        border-radius: 8px;
+        border: none;
+    }
+
+    input {
+        padding-left: 16px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+.dateSingle {
+    //   border: 1px solid #ddd;
+    //   border-radius:
+
+    &__monthText {
+        font-size: 19px;
+        font-weight: 800;
+    }
+
+    .dayContents {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        font-size: 14px;
+        font-weight: bold;
+
+        &__price {
+            font-size: 9px;
+            font-weight: 700;
+        }
+    }
+}

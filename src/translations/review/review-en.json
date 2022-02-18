@@ -1,0 +1,20 @@
+{
+    "label": {
+        "rating": {
+            "ratingWorst": "Terrible",
+            "ratingWorse": "Bad",
+            "ratingNormal": "Medium",
+            "ratingGood": "Good",
+            "ratingBest": "Wonderful"
+        },
+        "common": {
+            "totalReviews": "{{totalReview}} reviews",
+            "label": "Review",
+            "travelType": "Travel type",
+            "signatureReview": "Signature review"
+        }
+    },
+    "button": {
+        "createReview": "Create review"
+    }
+}

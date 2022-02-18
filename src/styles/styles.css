@@ -1,0 +1,13 @@
+body {
+    color: #3f4254 !important;
+    font-family: Poppins, Helvetica, 'sans-serif' !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    line-height: 1.5 !important;
+    letter-spacing: 0 !important;
+    background: #ffffff !important;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

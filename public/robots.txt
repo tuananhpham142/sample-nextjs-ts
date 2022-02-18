@@ -1,0 +1,11 @@
+User-agent: Googlebot
+Allow: *.css*
+Allow: *.js*
+
+# Global
+User-agent: *
+Disallow: *?f
+Disallow: *?q
+Disallow: */attachment/*
+
+#Sitemap: https://haloplan.com/sitemap/sitemap.xml

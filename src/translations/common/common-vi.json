@@ -1,0 +1,93 @@
+{
+    "app": {
+        "name": "Halo Travel",
+        "version": "Phiên bản"
+    },
+    "label": {
+        "on": "On",
+        "off": "Off",
+        "optionalWithScope": "(Optional)",
+        "optional": "Optional",
+        "or": "Hoặc",
+        "with": "với",
+        "continueWithLabel": "Tiếp tục với {{label}}",
+        "google": "Google",
+        "facebook": "Facebook",
+        "meta": "Meta",
+        "zalo": "Zalo",
+        "apple": "Apple",
+        "agree": "Tôi đồng ý với",
+        "termsAndConditions": "Điều khoản và điều kiện",
+        "viewPlace": "Xem địa điểm",
+        "totalPostWithLabel": "{{label}} bài viết",
+        "relatedPlaces": "Địa điểm bạn sẽ quan tâm"
+    },
+    "button": {
+        "resetPassword": "Đặt lại mật khẩu",
+        "resendOTPResetPassword": "Lấy lại mật khẩu",
+        "save": "Save",
+        "cancel": "Cancel",
+        "add": "Add",
+        "update": "Update",
+        "reset": "Reset",
+        "close": "Close",
+        "discard": "Discard",
+        "addWithLabel": "Add {{label}}",
+        "saveWithLabel": "Save {{label}}",
+        "continue": "Tiếp tục",
+        "submit": "Xác nhận",
+        "signUp": "Tạo tài khoản",
+        "next": "Tiếp theo",
+        "back": "Quay lại",
+        "more": " Xem thêm",
+        "action": "Hành động"
+    },
+    "currency": {
+        "usdOriginal": "USD",
+        "usdSymbol": "US$",
+        "vndOriginal": "VND",
+        "vndSymbol": "đ"
+    },
+    "status": {
+        "inProgress": "Đang hoạt động",
+        "finished": "Đã kết thúc"
+    },
+    "notify": {
+        "auth": {
+            "loginSuccess": "Đăng nhập thành công!",
+            "loginFailed": "Đăng nhập thất bại!",
+            "refreshTokenSuccess": "Làm mới token thành công!",
+            "registerSuccess": "Đăng ký thành công!",
+            "confirmSuccess": "Xác nhận thành công!",
+            "sendConfirmationCodeSuccess": "Gửi mã xác nhận thành công!",
+            "resendConfirmationCodeSuccess": "Gửi lại mã xác nhận thành công!",
+            "passwordChangedSuccessfully": "Đổi mật khẩu thành công!",
+            "sessionTimeout": "Phiên làm việc hết hạn!",
+            "loginAnotherDevice": "Tài khoản được đăng nhập ở một nơi khác! Đang đăng xuất..."
+        },
+        "user": {
+            "notFound": "Không tìm thấy người dùng!",
+            "selectFail": "Lựa chọn người dùng không thành công!",
+            "createSuccess": "Tạo người dùng mới thành công!",
+            "createFailed": "Tạo người dùng mới thất bại!",
+            "updateSuccess": "Cập nhật người dùng thành công!",
+            "updateFailed": "Cập nhật người dùng thất bại!",
+            "addUserSuccess": "Thêm người dùng thành công!",
+            "addUserFailed": "Thêm người dùng thất bại!"
+        },
+        "profile": {
+            "updateProfileSuccess": "Cập nhật thành công!",
+            "updateProfileFailed": "Cập nhật thất bại!",
+            "upatePasswordSuccess": "Thay đổi mật khẩu thành công!",
+            "updatePasswordFailed": "Thay đổi mật khẩu thất bại!",
+            "sendOTPSuccess": "Gửi mã OTP thành công!",
+            "sendOTPFailed": "Gửi mã OTP thất bại!",
+            "confirmOTPSuccess": "Xác nhận OTP thành công!",
+            "confirmOTPFailed": "Xác nhận OTP thất bại!",
+            "successFullySentTheOTP": "Gửi mã OTP thành công!",
+            "failedToSendOTPCode": "Gửi mã OTP thất bại!",
+            "updateContactSuccess": "Cập nhật liên hệ thành công!",
+            "updateContactFailed": "Cập nhật liên hệ thất bại!"
+        }
+    }
+}

@@ -1,0 +1,93 @@
+{
+    "app": {
+        "name": "Halo Travel",
+        "version": "version"
+    },
+    "label": {
+        "on": "On",
+        "off": "Off",
+        "optionalWithScope": "(Optional)",
+        "optional": "Optional",
+        "or": "Or",
+        "with": "with",
+        "continueWithLabel": "Continue with {{label}}",
+        "google": "Google",
+        "facebook": "Facebook",
+        "meta": "Meta",
+        "zalo": "Zalo",
+        "apple": "Apple",
+        "agree": "I Agree",
+        "termsAndConditions": "Terms and conditions",
+        "viewPlace": "Visit place",
+        "totalPostWithLabel": "{{label}} posts",
+        "relatedPlaces": "Related places"
+    },
+    "button": {
+        "resetPassword": "Reset password",
+        "resendOTPResetPassword": "Get password",
+        "save": "Save",
+        "cancel": "Cancel",
+        "add": "Add",
+        "update": "Update",
+        "reset": "Reset",
+        "close": "Close",
+        "discard": "Discard",
+        "addWithLabel": "Add {{label}}",
+        "saveWithLabel": "Save {{label}}",
+        "continue": "Continue",
+        "submit": "Submit",
+        "signUp": "Sign up",
+        "next": "Next",
+        "back": "Back",
+        "more": "More",
+        "action": "Action"
+    },
+    "currency": {
+        "usdOriginal": "USD",
+        "usdSymbol": "US$",
+        "vndOriginal": "VND",
+        "vndSymbol": "đ"
+    },
+    "status": {
+        "inProgress": "Đang hoạt động",
+        "finished": "Đã kết thúc"
+    },
+    "notify": {
+        "auth": {
+            "loginSuccess": "Login Success!",
+            "loginFailed": "Login Failed!",
+            "refreshTokenSuccess": "Refresh token success!",
+            "registerSuccess": "Register success!",
+            "confirmSuccess": "Confirm success!",
+            "sendConfirmationCodeSuccess": "Send confirmation code successfully!",
+            "resendConfirmationCodeSuccess": "Resend confirmation code successfully!",
+            "passwordChangedSuccessfully": "Password changed successfully!",
+            "sessionTimeout": "Session timeout!",
+            "loginAnotherDevice": "Account is logged in from another device! Logging out..."
+        },
+        "user": {
+            "notFound": "User not found!",
+            "selectFail": "Select user failed!",
+            "createSuccess": "Create new user success!",
+            "createFailed": "Create new user failed!",
+            "updateSuccess": "Update user success!",
+            "updateFailed": "Update user failed!",
+            "addUserSuccess": "Add user success!",
+            "addUserFailed": "Add user failed!"
+        },
+        "profile": {
+            "updateProfileSuccess": "Update Success!",
+            "updateProfileFailed": "Update failed!",
+            "upatePasswordSuccess": "Update password Success!",
+            "updatePasswordFailed": "Update password failed!",
+            "sendOTPSuccess": "Send OTP success!",
+            "sendOTPFailed": "Send OTP failed!",
+            "confirmOTPSuccess": "Confirm OTP Success!",
+            "confirmOTPFailed": "Confirm OTP Failed!",
+            "successFullySentTheOTP": "Successfully sent the OTP!",
+            "failedToSendOTPCode": "Failed to send otp code!",
+            "updateContactSuccess": "Update contact success!",
+            "updateContactFailed": "Update contact failed!"
+        }
+    }
+}
