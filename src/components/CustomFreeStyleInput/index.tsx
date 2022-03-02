@@ -36,6 +36,7 @@ interface CustomFreeStyleInputProps extends InputBaseProps {
     autoHeight?: boolean;
     circle?: boolean;
     maxLength?: number;
+    inputClasses?: string;
 }
 
 const CustomFreeStyleInput: FunctionComponent<CustomFreeStyleInputProps> = (props: CustomFreeStyleInputProps) => {
@@ -53,6 +54,7 @@ const CustomFreeStyleInput: FunctionComponent<CustomFreeStyleInputProps> = (prop
         autoHeight,
         circle,
         maxLength,
+        inputClasses,
     } = props;
     const classes = useStyles(props);
 
@@ -69,6 +71,7 @@ const CustomFreeStyleInput: FunctionComponent<CustomFreeStyleInputProps> = (prop
                             ...props,
                             ...field,
                         }}
+                        defaultValue={props.defaultValue}
                         inputProps={{ maxLength }}
                         disabled={disabled}
                         startAdornment={props.startAdornment}
@@ -80,7 +83,10 @@ const CustomFreeStyleInput: FunctionComponent<CustomFreeStyleInputProps> = (prop
                         })}
                         classes={{
                             root: autoHeight ? classes.autoHeight : undefined,
-                            input: textCenter ? classes.textCenter : undefined,
+                            input: clsx({
+                                [`${inputClasses}`]: inputClasses,
+                                [`${classes.textCenter}`]: textCenter,
+                            }),
                         }}
                         fullWidth
                         error={get(errors, name)}

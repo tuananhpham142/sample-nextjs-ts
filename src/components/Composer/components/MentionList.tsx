@@ -1,14 +1,27 @@
-import React from 'react';
-import { MentionBlotClassName } from '../constant';
+import { EntryComponentProps } from '@draft-js-plugins/mention/lib/MentionSuggestions/Entry/Entry';
+import React, { FunctionComponent } from 'react';
 
-interface ComposerMentionProps {
-    id: number;
-    text: string;
-}
-export const ComposerMention = ({ id, text }: ComposerMentionProps) => {
+export const MentionList: FunctionComponent<EntryComponentProps> = (props: EntryComponentProps) => {
+    const {
+        mention,
+        theme,
+        searchValue, // eslint-disable-line @typescript-eslint/no-unused-vars
+        isFocused, // eslint-disable-line @typescript-eslint/no-unused-vars
+        ...parentProps
+    } = props;
     return (
-        <a data-type='mention' data-id={id} className={MentionBlotClassName} color='accent.base'>
-            <span>{text}</span>
-        </a>
+        <div {...parentProps}>
+            <div className='d-flex align-items-center bg-hover-light-primary p-1'>
+                <div className='symbol symbol-circle symbol-45px me-5'>
+                    <img src={mention.avatar} alt='' />
+                </div>
+                <div className='d-flex justify-content-start flex-column'>
+                    <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
+                        {mention.name}
+                    </a>
+                    <span className='text-muted fw-bold text-muted d-block fs-7'>{mention.title}</span>
+                </div>
+            </div>
+        </div>
     );
 };

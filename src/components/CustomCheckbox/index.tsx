@@ -1,27 +1,10 @@
 import { ButtonSize, CheckboxVariant, Color } from '@/models/interfaces/theme';
-import { THEME_COLOR_DANGER } from '@/styles/colorPalette';
-import { SIZE_TEXT_CAPTION } from '@/styles/global';
-import { FormHelperText, Theme, Typography } from '@mui/material';
-import { makeStyles } from '@mui/styles';
+import { Typography } from '@mui/material';
 import clsx from 'clsx';
 import { Fragment, FunctionComponent, ReactNode } from 'react';
 import { Control, Controller, FieldErrors, get, RegisterOptions } from 'react-hook-form';
 
-const useStyles = makeStyles<Theme, CustomCheckboxProps>((theme: Theme) => ({
-    sectionTitleMargin: {
-        marginBottom: theme.spacing(1),
-    },
-    inputTitle: {
-        marginBottom: theme.spacing(1),
-    },
-    helperText: {
-        color: THEME_COLOR_DANGER,
-        marginTop: theme.spacing(1 / 2),
-        fontSize: SIZE_TEXT_CAPTION,
-    },
-}));
-
-interface CustomCheckboxProps {
+interface CustomCheckboxProps<T> {
     className?: string;
     name: string;
     inputTitle?: string | ReactNode;
@@ -34,14 +17,17 @@ interface CustomCheckboxProps {
     size?: ButtonSize;
     color: Color;
     errors?: FieldErrors;
+    defaultValue?: boolean;
+    onChange?: ({ data, selected }: { data?: T; selected: boolean }) => void;
 }
 
-const CustomCheckbox: FunctionComponent<CustomCheckboxProps> = (props: CustomCheckboxProps) => {
+const CustomCheckbox: FunctionComponent<CustomCheckboxProps<any>> = (props: CustomCheckboxProps<any>) => {
     const {
         className,
         name,
         inputTitle,
         inputSubtitle,
+        defaultValue,
         control,
         rules,
         disabled,
@@ -50,17 +36,16 @@ const CustomCheckbox: FunctionComponent<CustomCheckboxProps> = (props: CustomChe
         size,
         color,
         errors,
+        onChange,
     } = props;
-    const classes = useStyles(props);
 
     return (
         <Fragment>
             {inputTitle && (
-                <div className={classes.sectionTitleMargin}>
+                <div className={`mb-2`}>
                     <Typography
                         variant='h6'
                         className={clsx({
-                            [classes.titleMargin]: Boolean(inputSubtitle),
                             'text-muted': disabled,
                         })}
                     >
@@ -80,7 +65,7 @@ const CustomCheckbox: FunctionComponent<CustomCheckboxProps> = (props: CustomChe
             <Controller
                 name={name}
                 control={control}
-                defaultValue={false}
+                defaultValue={defaultValue}
                 rules={rules}
                 render={({ field }) => (
                     <label
@@ -91,7 +76,20 @@ const CustomCheckbox: FunctionComponent<CustomCheckboxProps> = (props: CustomChe
                             className,
                         )}
                     >
-                        <input disabled={disabled} type='checkbox' className='form-check-input' {...field} />
+                        <input
+                            disabled={disabled}
+                            type='checkbox'
+                            className='form-check-input'
+                            {...field}
+                            onChange={(event: any) => {
+                                if (onChange) {
+                                    onChange({ selected: event.target.checked });
+                                } else {
+                                    field.onChange();
+                                }
+                            }}
+                            defaultChecked={defaultValue}
+                        />
                         {typeof checkboxTitle !== 'string' ? (
                             checkboxTitle
                         ) : (
@@ -103,9 +101,9 @@ const CustomCheckbox: FunctionComponent<CustomCheckboxProps> = (props: CustomChe
                 )}
             />
             {get(errors, name) && (
-                <FormHelperText id='my-helper-text' className={classes.helperText}>
+                <span id='my-helper-text' className={'fs-8 text-danger mt-1'}>
                     {get(errors, name).message}
-                </FormHelperText>
+                </span>
             )}
         </Fragment>
     );

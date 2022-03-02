@@ -8,6 +8,11 @@
     .text-#{$name} {
         color: $color !important;
     }
+    // Applied webkit
+    .text-#{$name}__important {
+        color: $color !important;
+        -webkit-text-fill-color: $color !important;
+    }
 
     // Inverse color
     @if (theme-inverse-color($name)) {
@@ -37,12 +42,12 @@
 
             i {
                 transition: $transition-link;
-				color: $color !important;
-			}
+                color: $color !important;
+            }
 
-			.svg-icon {
-				@include svg-icon-color($color);
-			}
+            .svg-icon {
+                @include svg-icon-color($color);
+            }
         }
     }
 
@@ -73,7 +78,7 @@
 
     // Active
     .text-active-#{$name} {
-        transition: $transition-link;        
+        transition: $transition-link;
 
         i {
             transition: $transition-link;
@@ -82,12 +87,12 @@
         &.active {
             transition: $transition-link;
             color: $color !important;
-            
+
             i {
                 transition: $transition-link;
                 color: $color !important;
             }
-    
+
             .svg-icon {
                 @include svg-icon-color($color);
             }
@@ -97,7 +102,7 @@
     // Active inverse
     @if (theme-inverse-color($name)) {
         .text-active-inverse-#{$name} {
-            transition: $transition-link;        
+            transition: $transition-link;
 
             i {
                 transition: $transition-link;
@@ -156,6 +161,6 @@ a {
     transition: $transition-link;
 
     &:hover {
-        transition:$transition-link;
+        transition: $transition-link;
     }
 }

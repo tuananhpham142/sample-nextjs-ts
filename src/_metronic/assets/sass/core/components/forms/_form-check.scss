@@ -36,7 +36,7 @@
 
     &:not(.form-switch) {
         .form-check-input {
-            &[type="checkbox"] {
+            &[type='checkbox'] {
                 background-size: $form-check-input-bg-size;
             }
         }
@@ -86,10 +86,37 @@
             }
         }
     }
+
+    // info state
+    &.form-check-info {
+        .form-check-input {
+            &:checked {
+                background-color: $info;
+            }
+        }
+    }
+
+    // primary state
+    &.form-check-primary {
+        .form-check-input {
+            &:checked {
+                background-color: $primary;
+            }
+        }
+    }
+
+    // dark state
+    &.form-check-dark {
+        .form-check-input {
+            &:checked {
+                background-color: $dark;
+            }
+        }
+    }
 }
 
 // Sizing
-.form-check.form-check-custom {   
+.form-check.form-check-custom {
     &.form-check-sm {
         .form-check-input {
             height: $form-check-input-width-sm;
